@@ -19,6 +19,7 @@ namespace SnakeAndLadder
             {
                 Random random = new Random();
                 int dice = random.Next(1, 7);
+
                 Console.WriteLine("The dice rolled to " + dice);
                 position += dice;
                 Console.WriteLine("Position of the player = " + position);
@@ -28,14 +29,17 @@ namespace SnakeAndLadder
 
                     Console.WriteLine("GameOver");
                 }
-                else if(position> Winning_Position) 
+
+                else if (position> Winning_Position) 
                 {
                    
                     Console.WriteLine("The player Remains in poisition  "+ start_position );
                 }
-               // Console.WriteLine("The player position moved to : " + position);
+                Count++;
+                
+              
             }
-            Console.WriteLine("The player position moved to : " + position);
+            Console.WriteLine("The number of times the Dice Rolled = " + Count);
 
         }
     }

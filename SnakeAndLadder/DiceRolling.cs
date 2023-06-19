@@ -10,6 +10,7 @@ namespace SnakeAndLadder
     {
         public void Game()
         {
+            int start_position = 0;
             int position = 0;
             int Count = 0;
             int Winning_Position = 100;
@@ -29,11 +30,13 @@ namespace SnakeAndLadder
                 }
                 else if(position> Winning_Position) 
                 {
-                    Console.WriteLine("The player not reached 100th position");
-                    Console.WriteLine("The player Remains in poisition  "+(position-dice));
+                   
+                    Console.WriteLine("The player Remains in poisition  "+ start_position );
                 }
                // Console.WriteLine("The player position moved to : " + position);
             }
+            Console.WriteLine("The player position moved to : " + position);
+
         }
     }
 }

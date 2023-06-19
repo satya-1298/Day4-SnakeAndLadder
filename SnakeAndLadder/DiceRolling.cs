@@ -17,6 +17,26 @@ namespace SnakeAndLadder
             Console.WriteLine("The dice rolled to "+dice);
             position += dice;
             Console.WriteLine("Position of the player = " + position);
+            Random ran = new Random();
+            int c = ran.Next(3);
+           
+            switch (c)
+            {
+
+                case 1:
+                    Console.WriteLine("It's ladder");
+                    position += dice;
+                    break;
+                case 2:
+                    Console.WriteLine("It's Sanke");
+                    position -= dice;
+                    break;
+                default:
+                    Console.WriteLine("No Play the player will be in same place");
+                    break;
+
+            }
+            Console.WriteLine("The player position moved to : "+position);
         }
     }
 }

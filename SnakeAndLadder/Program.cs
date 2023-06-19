@@ -12,6 +12,7 @@ namespace SnakeAndLadder
         {
             DiceRolling dice=new DiceRolling();
             dice.Game();
+            Console.ReadLine();
         }
     }
 }
